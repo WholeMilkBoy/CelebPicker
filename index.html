@@ -68,12 +68,12 @@
 
       // Set the source and text of the first image to a random image
       const image1FileName = getRandomImage();
-      image1.src = "images/" + image1FileName;
+      image1.src = image1FileName;
       image1Text.textContent = image1FileName.replace(/\.[^/.]+$/, ""); // remove file extension
 
       // Set the source and text of the second image to a random image
       const image2FileName = getRandomImage();
-      image2.src = "images/" + image2FileName;
+      image2.src = image2FileName;
       image2Text.textContent = image2FileName.replace(/\.[^/.]+$/, ""); // remove file extension
 
       // Add event listeners to the images to listen for clicks

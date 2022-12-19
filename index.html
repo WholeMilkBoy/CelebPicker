@@ -68,25 +68,25 @@
 
       // Set the source and text of the first image to a random image
       const image1FileName = getRandomImage();
-      image1.src = image1FileName;
+      image1.src = "https://github.com/WholeMilkBoy/CelebPicker/tree/main/images" + age1FileName;
       image1Text.textContent = image1FileName.replace(/\.[^/.]+$/, ""); // remove file extension
 
       // Set the source and text of the second image to a random image
       const image2FileName = getRandomImage();
-      image2.src = image2FileName;
+      image2.src = "https://github.com/WholeMilkBoy/CelebPicker/tree/main/images" + age2FileName;
       image2Text.textContent = image2FileName.replace(/\.[^/.]+$/, ""); // remove file extension
 
       // Add event listeners to the images to listen for clicks
       image1.addEventListener("click", function() {
         // Update the source and text of the other image to a new image
         const newImage2FileName = getRandomImage();
-        image2.src = "../images/" + newImage2FileName;
+        image2.src = "https://github.com/WholeMilkBoy/CelebPicker/tree/main/images" + newImage2FileName;
         image2Text.textContent = newImage2FileName;
       });
       image2.addEventListener("click", function() {
         // Update the source and text
         const newImage1FileName = getRandomImage();
-        image1.src = "../images/" + newImage1FileName;
+        image1.src = "https://github.com/WholeMilkBoy/CelebPicker/tree/main/images" + newImage1FileName;
       });
 
       // Function to get the file name of a random image
